@@ -2,8 +2,8 @@ import { useEffect, useState } from 'react';
 import { IoClose, IoMenu } from 'react-icons/io5';
 import { Link, useLocation } from 'react-router-dom';
 import menuItems from '../../../data/menuItems'; // assuming you have a menuItems data file
-import Button from '../Button/Button'; // Assuming Button component is created
 import Headroom from 'react-headroom';
+import MyButton from '@/components/ui/core/MyButton/MyButton';
 
 const Navbar = () => {
   const [, setIsScrolled] = useState(false);
@@ -123,11 +123,9 @@ const Navbar = () => {
                 className="flex flex-col items-center justify-start gap-2"
               >
                 <Link to="/login" className="w-full">
-                  <Button
-                    text="Login"
-                    isRounded={true}
-                    isReversed={true}
-                    isFullWidth={true}
+                  <MyButton
+                    label="Login"
+                    fullWidth
                   />
                 </Link>
               </div>

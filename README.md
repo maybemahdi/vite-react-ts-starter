@@ -6,5 +6,4 @@ cd project-name
 npm install react@latest react-dom@latest
 npm install vite@latest @vitejs/plugin-react@latest
 npm install @types/react@latest @types/react-dom@latest
-npm install
 ```
