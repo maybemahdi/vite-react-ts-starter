@@ -9,6 +9,9 @@
     "paths": {
       "@/*": ["./src/*"]
     },
+    "outDir": "./dist",        // ✅ compiled JS will go here
+    "rootDir": "./src",        // ✅ source files
+    "types": ["node"],
     "jsx": "react-jsx",
     "strict": true,
     "moduleResolution": "node",
